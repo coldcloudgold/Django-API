@@ -24,7 +24,7 @@
 
 ![alt](https://github.com/coldcloudgold/illustration/blob/main/Project/API/Create_check.gif)
 
-### Список доступных чеков для печати (create_checks):
+### Список доступных чеков для печати (new_checks):
 
 ![alt](https://github.com/coldcloudgold/illustration/blob/main/Project/API/New_checks.gif)
 
@@ -78,7 +78,7 @@ sudo kill `sudo lsof -t -i:<xxxx>`
 
 ## Полезное:
 
-### Зайти в панель администратора (пользователь создается по умолчанию), если не менялись соотетствующие параметры в окружении:
+### Зайти в панель администратора (пользователь создается по умолчанию), если не менялись соответствующие параметры в окружении:
 
 ```
 Name: name_admin
