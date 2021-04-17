@@ -1,0 +1,16 @@
+# директории
+.vscode/
+__pycache__/
+media/
+static/
+
+# файлы бд
+db.sqlite3
+
+# файлы
+*.pdf
+*.log
+*.txt
+!requirements.txt
+API_app/migrations/0001_initial.py
+.env

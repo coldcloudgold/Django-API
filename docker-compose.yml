@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+
+  redisqueue:
+    image: redis:6.2-alpine
+    ports:
+      - "6380:6379"
+
+  postgresdb:
+    image: postgres:13.2-alpine
+    environment:
+      POSTGRES_DB: ${DJANGO_DB_DATABASE}
+      POSTGRES_USER: ${DJANGO_DB_USER}
+      POSTGRES_PASSWORD: ${DJANGO_DB_PASSWORD}
+    ports:
+      - "5433:5432"
+
+  wkhtmltopdfaas:
+    image: openlabs/docker-wkhtmltopdf-aas
+    ports: 
+      - "8081:80"
+
+  webapp:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/API
+    ports:
+      - "8001:8000"
+    depends_on:
+      - redisqueue
+      - postgresdb
+      - wkhtmltopdfaas
+
+  nginxserver:
+    build:
+      context: ./docker/nginx
+      dockerfile: Dockerfile
+    volumes:
+      - ./static/:/static
+    ports:
+      - "8080:80"
+    depends_on:
+      - webapp

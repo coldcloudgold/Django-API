@@ -1,0 +1,82 @@
+[
+    {
+        "model": "API_app.printer",
+        "pk": 1,
+        "fields": {
+            "name": "f_client_1",
+            "api_key": "1",
+            "check_type": "client",
+            "point_id": 1
+        }
+    },
+    {
+        "model": "API_app.printer",
+        "pk": 2,
+        "fields": {
+            "name": "f_kitchen_1",
+            "api_key": "2",
+            "check_type": "kitchen",
+            "point_id": 1
+        }
+    },
+    {
+        "model": "API_app.printer",
+        "pk": 3,
+        "fields": {
+            "name": "f_client_2",
+            "api_key": "3",
+            "check_type": "client",
+            "point_id": 2
+        }
+    },
+    {
+        "model": "API_app.printer",
+        "pk": 4,
+        "fields": {
+            "name": "f_kitchen_2",
+            "api_key": "4",
+            "check_type": "kitchen",
+            "point_id": 2
+        }
+    },
+    {
+        "model": "API_app.printer",
+        "pk": 5,
+        "fields": {
+            "name": "f_client_3",
+            "api_key": "5",
+            "check_type": "client",
+            "point_id": 3
+        }
+    },
+    {
+        "model": "API_app.printer",
+        "pk": 6,
+        "fields": {
+            "name": "f_kitchen_3",
+            "api_key": "6",
+            "check_type": "kitchen",
+            "point_id": 3
+        }
+    },
+    {
+        "model": "API_app.printer",
+        "pk": 7,
+        "fields": {
+            "name": "f_client_4",
+            "api_key": "7",
+            "check_type": "client",
+            "point_id": 4
+        }
+    },
+    {
+        "model": "API_app.printer",
+        "pk": 8,
+        "fields": {
+            "name": "f_kitchen_4",
+            "api_key": "8",
+            "check_type": "kitchen",
+            "point_id": 4
+        }
+    }
+]
